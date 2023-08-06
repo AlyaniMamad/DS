@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Rest parameter</title>
+    </head>
+    <body>
+        <script>
+            //ES5
+
+            /*function sum(a,b,c,d,e,f){
+                return a+b+c+d+e+f;
+            }
+            console.log(sum(1,2,3,4,5,6))*/
+
+            //ES6
+
+            let sum = (...inp)=>{
+               
+               let summ=0
+                for (let i=0;i<inp.length;i++){
+                    summ+=inp[i]
+                }
+                return summ
+            }
+
+            console.log(sum(1,2,4,5,4,7,8,9,5,6,2))
+
+        </script>
+    </body>
+</html>
