@@ -16,12 +16,9 @@ int main()
         for(int j=1;j<=no;j++)
         {
             if(i==1 || j==1 || i==no || j==no)
-            {
                 printf("* ");
-            }
-            else{
+            else
                 printf("  ");
-            }
         }
         printf("\n");
     }
