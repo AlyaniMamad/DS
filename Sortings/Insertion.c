@@ -7,7 +7,7 @@ int main(){
     int n = sizeof(arr)/sizeof(int);
 
     for(int i=1;i<n;i++){
-        while()
+        
     }
 
     return 0;
