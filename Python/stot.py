@@ -12,7 +12,7 @@ def record_voice():
 			phrase = microphone.recognize_google(audio, language='en')
 			return phrase
 		except speech_recognition.UnkownValueError:
-			return "I didn't understand what you said"
+			return "I didn't understand what you said, Please Repeat!"
 
 if __name__ == '__main__':
 	phrase = record_voice()
