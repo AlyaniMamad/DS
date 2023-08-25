@@ -1,11 +1,24 @@
 <script>
-
-const arr = ['js','pp','java','c']
-
-let [t1,t2,t3,t4] = arr
-
-console.log(arr.length)
-
-console.log(t1);
-
+  let mystr = ["Flwer", "Flnw", "Flnnnn"];
+  let same = "";
+mystr.sort((a,b)=>a.length-b.length)
+let flag=true;
+for(let l=mystr[0].length;l>=0;l--)
+{
+    flag=true;
+    for(let i=1;i<mystr.length;i++)
+    {
+        if(mystr[i].substring(0,l)!=mystr[0].substring(0,l))
+        {
+            flag=false;
+            break;
+        }
+    }
+    if(flag)
+    {
+        same=mystr[0].substring(0,l);
+        break;
+    }
+}
+console.log(same)
 </script>
