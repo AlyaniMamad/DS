@@ -1,12 +1,11 @@
-// Input : arr[6] = [1, 90, 34, 89, 7, 9]
-// Output : 1 7 9 90 89 34
+// Input: arr[6] = [1, 90, 34, 89, 7, 9]
+// Output: 1 7 9 90 89 34
 
 #include <stdio.h>
 
 int main(){
 
     int arr[6] = {1, 90, 34, 89, 7, 9};
-
 
     int n = sizeof(arr)/sizeof(int);
     int mid = n/2;
